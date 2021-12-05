@@ -38,7 +38,3 @@ VALUES (101,"Repetido","curso repetido","Mañana",25);`
 
 7.
 `DELETE FROM CURSO WHERE codigo = 101;`
-
-### Tema 2 (Tipos de Join)
-
-
