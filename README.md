@@ -38,3 +38,41 @@ VALUES (101,"Repetido","curso repetido","Mañana",25);`
 
 7.
 `DELETE FROM CURSO WHERE codigo = 101;`
+
+### Tema 3 (Queries)
+
+Creación de la tabla y sus campos:
+
+`CREATE TABLE PROFESOR (
+  id INT NOT NULL PRIMARY KEY,
+  nombre VARCHAR(45) NOT NULL,
+  apellido VARCHAR(45) NOT NULL,
+  fecha_nacimiento DATE NOT NULL,
+  salario INT NOT NULL
+);
+
+INSERT INTO PROFESOR VALUES
+(1,"Juan","Pérez",'1990-06-06',55000),
+(2,"María Emilia","Paz",'1984-07-15',72000),
+(3,"Martín","Correa",'1987-12-07',63000),
+(4,"Lucía","Díaz",'1991-02-24',45000),
+(5,"Raúl","Martínez",'1980-10-15',85000),
+(6,"Mabel","Ríos",'1982-06-12',83000);`
+
+1.
+`SELECT nombre, apellido, fecha_nacimiento FROM PROFESOR ORDER BY fecha_nacimiento ASC;`
+
+2.
+`SELECT * FROM PROFESOR WHERE SALARIO >= 65000;`
+
+3.
+`SELECT * FROM PROFESOR WHERE (fecha_nacimiento) BETWEEN ('1980-01-01') AND ('1989-12-31') order by fecha_nacimiento;`
+
+4.
+`SELECT * FROM PROFESOR LIMIT 5;`
+
+5.
+`SELECT * FROM PROFESOR WHERE apellido LIKE "P%";`
+
+6.
+`SELECT * FROM PROFESOR WHERE ((fecha_nacimiento) BETWEEN ('1980-01-01') AND ('1989-12-31')) AND salario > 80000;`
