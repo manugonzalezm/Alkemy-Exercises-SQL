@@ -49,9 +49,9 @@ Creación de la tabla y sus campos:
   apellido VARCHAR(45) NOT NULL,
   fecha_nacimiento DATE NOT NULL,
   salario INT NOT NULL
-);
+);`
 
-INSERT INTO PROFESOR VALUES
+`INSERT INTO PROFESOR VALUES
 (1,"Juan","Pérez",'1990-06-06',55000),
 (2,"María Emilia","Paz",'1984-07-15',72000),
 (3,"Martín","Correa",'1987-12-07',63000),
